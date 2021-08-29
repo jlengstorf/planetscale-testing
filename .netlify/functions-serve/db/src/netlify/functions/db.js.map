@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": ["../../../../../../Users/jlengstorf/github/jlengstorf/planetscale-testing/netlify/functions/db.js"],
+  "sourceRoot": "/var/folders/fh/4g88p7ks7zs00h_gm811wcyw0000gn/T/tmp-58115-ZkpB2U7Zq3HT",
+  "sourcesContent": ["import { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport async function handler() {\n  const posts = await prisma.post.findMany();\n\n  return {\n    statusCode: 200,\n    body: JSON.stringify(posts),\n  };\n}\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA,oBAA6B;AAE7B,IAAM,SAAS,IAAI;AAEnB,yBAAgC;AAC9B,QAAM,QAAQ,MAAM,OAAO,KAAK;AAEhC,SAAO;AAAA,IACL,YAAY;AAAA,IACZ,MAAM,KAAK,UAAU;AAAA;AAAA;",
+  "names": []
+}
